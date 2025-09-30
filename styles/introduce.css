@@ -1,0 +1,47 @@
+.interior {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    background-image: url(../resources/interier.png);
+    background-repeat: no-repeat;
+}
+.image-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 430px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+.introduce {
+    margin-top: 70px;
+}
+
+
+
+@media (max-width: 1199px) {
+    .interior {
+        height: 400px;
+        background-position: 50%;  
+    }
+}
+
+@media (max-width: 767px) {
+    .interior {
+        height: 304px;
+        background-position: 30% 50%;  
+        background-size: 207%;
+    }
+    .image-text {
+        width: 312px;
+        line-height: 24px;
+        left: 15px;
+        bottom: 15px;
+        font-size: 16px;
+    }
+}
