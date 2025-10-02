@@ -43,6 +43,9 @@
     .project {
         margin-bottom: 80px;
     }
+    .project__image {
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 767px) {
@@ -61,5 +64,8 @@
     .fullWidthBtn {
         height: 100px;
         font-size: 22px;
+    }
+    .project__image {
+        height: 250px;
     }
 }
