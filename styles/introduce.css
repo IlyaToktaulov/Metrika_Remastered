@@ -3,7 +3,7 @@
     width: 100%;
     height: 500px;
 
-    background-image: url(../resources/interier.png);
+    background-image: url(../resources/Intro/interier.png);
     background-repeat: no-repeat;
 }
 .image-text {
@@ -20,6 +20,9 @@
 }
 .introduce {
     margin-top: 70px;
+}
+.service__image {
+    object-fit: cover;
 }
 
 

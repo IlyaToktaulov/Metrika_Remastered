@@ -16,11 +16,11 @@ body {
 }
 .container {
     margin: 0 auto;
-    padding-top: 33px;
     width: 1150px;
     background: #FFFFFF;
 }
 .container__black {
+    width: 100%;
     background: rgb(18, 18, 18);
 }
 section {
@@ -54,12 +54,10 @@ h2 {
 h3 {
     margin-top: 15px;
     margin-bottom: 15px;
-
     font-size: 30px;
     line-height: 41px;
 }
 .black_h2 {
-    margin-bottom: 34px;
     color: #FFFFFF;
 }
 

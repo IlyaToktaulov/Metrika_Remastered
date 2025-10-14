@@ -88,30 +88,76 @@
                 </ul>
                 <button class="fullWidthBtn">Смотреть все проекты</button>
             </section>
-
-            <!-- <div class="container__black">
-                <section class="section-black">
-                    <h2 id="services" class="black_h2">услуги</h2>
-                    <ul class="services">
-                        <li class="service">
-                            <img class="service__image" src="../resources/Services/image1.png" alt="Планировочное решение — от 2500₽/м²">
-                            <h3 class="black-title">Планировочное решение — от 2500₽/м²</h3>
-                        </li>
-                        <li class="service">
-                            <img class="service__image" src="../resources/Services/image2.png" alt="Дизайн-проект — от 3000₽/м²">
-                            <h3 class="black-title">Дизайн-проект — от 3000₽/м²</h3>
-                        </li>
-                        <li class="service">
-                            <img class="service__image" src="../resources/Services/image3.png" alt="Авторский надзор — от 30 000₽ в месяц">
-                            <h3 class="black-title">Авторский надзор — от 30 000₽ в месяц</h3>
-                        </li>
-                        <li class="service">
-                            <img class="service__image" src="../resources/Services/image4.png" alt="Комплектация — 5% от стоимости спецификации">
-                            <h3 class="black-title">Комплектация — 5% от стоимости спецификации</h3>
-                        </li>
-                    </ul>
-                </section>
-            </div> -->
+    </div>      
+    <div class="container container__black">
+            <section class="section-black">
+                <h2 id="services" class="black_h2">услуги</h2>
+                <ul class="services">
+                    <li class="service">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                srcset="./resources/Services/mobile/Planning-solution-mobile.png"
+                            />
+                            <source
+                                media="(max-width:1199px)"
+                                srcset="./resources/Services/tablet/Planning-solution-tablet.png"
+                            />
+                            <img class="service__image" src="./resources/Services/desktop/Planning-solution.png" alt="Планировочное решение — от 2500₽/м²">
+                        </picture>
+                        <p class="service__price">от 2500₽/м²</p>
+                        <h3 class="black-title">Планировочное решение</h3>
+                    </li>
+                    <li class="service">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                srcset="./resources/Services/mobile/Design-project-mobile.png"
+                            />
+                            <source
+                                media="(max-width:1199px)"
+                                srcset="./resources/Services/tablet/Design-project-tablet.png"
+                            />
+                            <img class="service__image" src="./resources/Services/desktop/Design-project.png" alt="Дизайн-проект — от 3000₽/м²">
+                        </picture>
+                        <p class="service__price">от 3000₽/м²</p>
+                        <h3 class="black-title">Дизайн-проект</h3>
+                    </li>
+                    <li class="service">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                srcset="./resources/Services/mobile/Author-supervision-mobile.png"
+                            />
+                            <source
+                                media="(max-width:1199px)"
+                                srcset="./resources/Services/tablet/Author-supervision-tablet.png"
+                            />
+                           <img class="service__image" src="./resources/Services/desktop/Author-supervision.png" alt="Авторский надзор — от 30 000₽ в месяц">
+                        </picture>
+                        <p class="service__price">от 30 000₽/мес</p>
+                        <h3 class="black-title">Авторский надзор</h3>
+                    </li>
+                    <li class="service">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                srcset="./resources/Services/mobile/Equipment-mobile.png"
+                            />
+                            <source
+                                media="(max-width:1199px)"
+                                srcset="./resources/Services/tablet/Equipment-tablet.png"
+                            />
+                            <img class="service__image" src="./resources/Services/desktop/Equipment.png" alt="Комплектация — 5% от стоимости спецификации">
+                        </picture>
+                        <p class="service__price">5% от стоимости</p>
+                        <h3 class="black-title">Комплектация</h3>
+                    </li>
+                </ul>
+                <button class="fullWidthBtn fullWidthBtn__red">Заказать услугу</button>
+            </section>
+    </div>
+    <div class="container">
             
             <!-- <section class="fullScreenImage">
                 <p class="fullScreenImage__text">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
