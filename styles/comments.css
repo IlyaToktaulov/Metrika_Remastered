@@ -7,7 +7,7 @@
 .column {
     width: calc(50% - 25px);
 }
-.column:last-child {
+.column:last-child:nth-child(2n+1) {
     width: 80%;
 }
 .comments__card {
@@ -61,3 +61,4 @@
     }
 
 }
+
