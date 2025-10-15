@@ -6,6 +6,7 @@
 @import "./section-black.css";
 @import "./gallery.css";
 @import "./contacts.css";
+@import "./comments.css";
 
 html {
     scroll-behavior: smooth;
