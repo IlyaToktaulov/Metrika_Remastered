@@ -1,2 +1,4 @@
-Это сайт студии дизайна "Метрика"
-Вот ссылка на сайт https://ilyatoktaulov.github.io/Metrika_Remastered/
+Это сайт студии дизайна "Метрика".
+Metrika Remastered - это доработанная версия сайта. В ней устаранены баги и проведён рефакторинг кода.
+
+Ознакомиться с сайтом вы можете по ссылке - https://ilyatoktaulov.github.io/Metrika_Remastered/
