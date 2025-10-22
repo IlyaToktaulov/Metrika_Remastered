@@ -1,27 +1,82 @@
-fullScreenImage {
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.gallery {
     position: relative;
-    padding: 0px;
-    margin-top: 0px;
-    width: 100%;
-    height: 717px;
-
-    background-image: url(/resources/bedroom.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
 }
 
-.fullScreenImage__text {
+.gallery__title-wrapper {
     position: absolute;
-    left: 125px;
-    bottom: 60px;
-    width: 443px;
-    height: 82px;
-    
-    color: rgba(255, 255, 255, 1);
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    line-height: 41px;
-    text-align: left;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    z-index: 1;  
+}
+.gallery__title {
+    color: white;
+    font-size: 24px;
+}
+
+.gallery__slides {
+    height: 500px;
+    position: relative;
+}
+
+.gallery__slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    height: 500px;
+}
+
+.gallery__slide_active {
+    opacity: 1;
+}
+
+.box {
+    height: 100%;
+}
+
+.box_green {
+    background-color: green;
+}
+
+.box_red {
+    background-color: red;
+}
+
+.box_blue {
+    background-color: blue;
+}
+.gallery__controls-wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .gallery__controls {
+        padding: 0px 30px;
+        width: 100%;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
