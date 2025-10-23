@@ -1,27 +1,138 @@
-fullScreenImage {
-    position: relative;
-    padding: 0px;
-    margin-top: 0px;
-    width: 100%;
-    height: 717px;
-
-    background-image: url(/resources/bedroom.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
+.container {
+    width: 960px;
+    margin: 0 auto;
 }
 
-.fullScreenImage__text {
+.gallery {
+    position: relative;
+}
+
+.gallery__title-wrapper {
     position: absolute;
-    left: 125px;
+    top: 67px;
+    z-index: 1;
+}
+
+.gallery__title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.gallery__slides {
+    height: 717px;
+    position: relative;
+}
+
+.gallery__slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+}
+
+.gallery__slide_active {
+    opacity: 1;
+}
+
+.box {
+    height: 100%;
+    position: relative;
+}
+.slide-title {
+    position: absolute;
     bottom: 60px;
-    width: 443px;
-    height: 82px;
-    
     color: rgba(255, 255, 255, 1);
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.03em;
-    line-height: 41px;
-    text-align: left;
+    line-height: 40px;
+}
+
+.forest-landscape {
+    background-image: url(../resources/Gallery/desktop/forest\ landscape-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.lighthouse {
+    background-image: url(../resources/Gallery/desktop/lighthouse-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.kitchen {
+    background-image: url(../resources/Gallery/desktop/kitchen-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.the-north-wind {
+    background-image: url(../resources/Gallery/desktop/The\ north\ wind-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.gallery__controls-wrapper {
+    position: absolute;
+    bottom: 162px;
+}
+.gallery__controls {
+    display: flex;
+    gap: 14px;
+}
+.gallery__control-prev {
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    background-image: url(../resources/Gallery/buttons/prev.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.gallery__control-prev:hover {
+    opacity: 0.5;
+}
+.gallery__control-next:hover {
+    opacity: 0.5;
+}
+.gallery__control-next {
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    background-image: url(../resources/Gallery/buttons/next.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .gallery__controls {
+        padding: 0px 30px;
+        width: 100%;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+        bottom: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
