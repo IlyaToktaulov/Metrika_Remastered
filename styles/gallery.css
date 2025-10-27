@@ -89,6 +89,10 @@
     background-image: url(../resources/Gallery/buttons/prev.png);
 }
 
+.gallery__control-next {
+    background-image: url(../resources/Gallery/buttons/next.png);
+}
+
 .gallery__control-prev:hover {
     opacity: 0.5;
 }
@@ -97,9 +101,6 @@
     opacity: 0.5;
 }
 
-.gallery__control-next {
-    background-image: url(../resources/Gallery/buttons/next.png);
-}
 
 @media (max-width: 1200px) {
     .container {
@@ -120,6 +121,9 @@
     .gallery__title-wrapper {
         top: 80px;
         left: 50px;
+    }
+    .gallery__title {
+        font-size: 20px;
     }
     .slide-title {
         bottom: 80px;
