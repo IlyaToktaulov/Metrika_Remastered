@@ -1,42 +1,84 @@
-.contacts {
-    margin-top: 186px;
-}
-
-.contacts__title {
-    position: relative;
-}
-
-.contacts__title::before {
-    content: '';
-    display: block;
-    position: absolute;
-    margin-bottom: 12px;
-    bottom: 19px;
-    width: 24px;
-    height: 24px;
-
-    background-image: url(/resources/phone.png);
-    background-size: cover;
+.row__contacts {
+    margin-top: 74px;
 }
 
 .contacts__number {
-    margin-bottom: 30px;
-    display: block;
-
-    color: rgba(18, 18, 18, 1);
-    text-decoration: none;
+    position: relative;
+    font-family: Manrope;
     font-size: 60px;
+    font-weight: 400;
     line-height: 60px;
     letter-spacing: -0.03em;
+    color: rgba(18, 18, 18, 1);
+    text-decoration: none;
+}
+
+.contacts__number::before {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../resources/Contacts/phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contacts__mail {
-    display: block;
-
-    color: rgba(18, 18, 18, 1);
-    opacity: 0.5;
+    position: relative;
+    font-family: Manrope;
     font-size: 60px;
+    font-weight: 400;
     line-height: 60px;
     letter-spacing: -0.03em;
-    text-decoration: underline;
+    color: rgba(18, 18, 18, 1);
+    opacity: 0.5;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.contacts__mail::before {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../resources/Contacts/mail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+@media (max-width: 1199px) {
+    .contacts__number {
+        font-size: 45px;
+    }
+    .contacts__mail {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row.row__contacts {
+        row-gap: 65px;
+        margin-top: 49px;
+    }
+    .contacts__number {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .contacts__mail {
+        font-size: 35px;
+        line-height: 45px
+    }
+    .contacts__number::before {
+        width: 18px;
+        height: 18px;
+        bottom: 60px;
+    }
+    .contacts__mail::before {
+        width: 18px;
+        height: 18px;
+        bottom: 60px;
+    }
 }

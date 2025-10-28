@@ -151,6 +151,7 @@
     .slide-title {
         font-size: 19px;
         line-height: 28px;
+        left: 13px;
     }
     .gallery__controls-wrapper {
         position: absolute;
