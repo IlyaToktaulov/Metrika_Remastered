@@ -166,4 +166,7 @@
         width: 30px;
         height: 30px;
     }
+    .gallery__slide-content {
+        background-position: 46% 50%;
+    }
 }
