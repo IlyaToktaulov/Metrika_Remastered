@@ -1,3 +1,7 @@
+.row__contacts {
+    margin-top: 74px;
+}
+
 .contacts__number {
     position: relative;
     font-family: Manrope;
@@ -42,4 +46,39 @@
     background-image: url(../resources/Contacts/mail.png);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 1;
+}
+
+@media (max-width: 1199px) {
+    .contacts__number {
+        font-size: 45px;
+    }
+    .contacts__mail {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row.row__contacts {
+        row-gap: 65px;
+        margin-top: 49px;
+    }
+    .contacts__number {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .contacts__mail {
+        font-size: 35px;
+        line-height: 45px
+    }
+    .contacts__number::before {
+        width: 18px;
+        height: 18px;
+        bottom: 60px;
+    }
+    .contacts__mail::before {
+        width: 18px;
+        height: 18px;
+        bottom: 60px;
+    }
 }
