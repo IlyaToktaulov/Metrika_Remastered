@@ -62,10 +62,12 @@
     letter-spacing: -0.03em;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav__link:hover {
     opacity: 0.5;
+    text-decoration: underline;
 }
 
 
@@ -78,6 +80,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 20;
+    }
+    .burger-btn:hover {
+        cursor: pointer;
     }
     .burger-btn_open {
         width: 34px;
@@ -115,6 +120,7 @@
         opacity: 0.5;
     }
     .burger__contacts-number {
+        display: block;
         font-size: 20px;
         font-weight: 400;
         line-height: 45.62px;
@@ -122,6 +128,7 @@
         color: black;
     }
     .burger__contacts-mail {
+        display: block;
         font-size: 20px;
         font-weight: 400;
         text-decoration: none;
