@@ -6,19 +6,13 @@
     height: 25px;
 }
 
-.nav {
-    display: flex;
-    gap: 60px;
-}
-
-.nav__link {
-    color: black;
-}
 
 .logo {
     width: 126px;
     height: 22px;
     background-image: url(../resources/header/header-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .burger-btn {
@@ -43,6 +37,7 @@
 .burger__content {
     width: 70%;
     height: 100%;
+    padding: 80px 30px 80px 30px;
     background-color: white;
 }
 
@@ -50,6 +45,29 @@
     visibility: visible;
     opacity: 1;
 }
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.nav__link {
+    display: block;
+    color: black;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    opacity: 0.5;
+}
+
 
 @media (max-width: 1200px) {
     .burger-btn {
@@ -61,8 +79,61 @@
         background-size: contain;
         z-index: 20;
     }
-
+    .burger-btn_open {
+        width: 34px;
+        height: 34px;
+        background-image: url(../resources/header/close-menu-btn.png);
+    }
     .nav {
         display: none;
+    }
+    .burger-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        gap: 20px;
+    }
+    .burger-nav__link {
+        display: block;
+        color: black;
+        font-family: Manrope;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .burger__logo {
+        width: 156px;
+        height: 26px;
+    }
+    .burger__contacts-header {
+        font-size: 16px;
+        font-weight: 400;
+        opacity: 0.5;
+    }
+    .burger__contacts-number {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 45.62px;
+        text-decoration: none;
+        color: black;
+    }
+    .burger__contacts-mail {
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        gap: 30px;
+    }
+    .nav__link {
+        font-size: 12px;
     }
 }
