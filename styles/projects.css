@@ -26,7 +26,6 @@
     text-align: center;
     background: rgb(255, 255, 255);
     color: rgb(173, 24, 24);
-    cursor: pointer;
 }
 .fullWidthBtn:hover {
     background-color: rgb(173, 24, 24);

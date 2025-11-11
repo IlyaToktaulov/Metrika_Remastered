@@ -26,7 +26,7 @@
           <div class="js-burger-btn burger-btn"></div>
         </div>
         <div class="js-burger burger">
-          <div class="js-burger__content burger__content">
+          <div class="burger__content">
             <div class="logo burger__logo"></div>
             <nav class="burger-nav">
               <a class="burger-nav__link" href="#about">о нас</a>
@@ -34,7 +34,7 @@
               <a class="burger-nav__link" href="#services">услуги</a>
               <a class="burger-nav__link" href="#contacts">контакты</a>
             </nav>
-            <div class="burger__contacts">
+            <div class="js-burger__content burger__contacts">
               <p class="burger__contacts-header">для связи:</p>
               <a class="burger__contacts-number" target="_blank" href="tel:+7 935 895-45-35">+7 935 895-45-35</a>
               <a class="burger__contacts-mail" target="_blank" href="mailto:metrika@mail.ru">metrika@mail.ru</a>
@@ -229,15 +229,18 @@
               <p class="popup__subtitle">Заполните форму, мы свяжемся с вами в течение суток</p>
               <input 
                 class="input"
-                type="text"
+                type="name"
+                name="name"
                 placeholder="Имя">
               <input 
                 class="input"
                 type="email"
+                name="email"
                 placeholder="Электронная почта">
               <input 
                 class="input"
                 type="tel"
+                name="tel"
                 placeholder="Номер телефона">
               <button class="fullWidthBtn fullWidthBtn__red fullWidthBtn__input">Отправить</button>
             </div>
